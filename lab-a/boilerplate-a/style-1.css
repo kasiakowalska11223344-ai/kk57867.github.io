@@ -1,3 +1,84 @@
 body {
-  background-color: #dfecff;
+  background-color: rgba(219, 26, 26, 0.5);
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-family: "Microsoft Tai Le";
+}
+
+header {
+  background-image: url("banner1.jpg");
+  background-size: cover;
+  padding: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  color: #FFF6F6;
+  font-size: 170%;
+}
+
+.text1 {
+  background-color: #f8c4c4;
+  font-size: 120%;
+  color: #DB1A1A;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+
+}
+
+/* LISTA */
+.lista1 {
+  border-bottom: #DB1A1A 3px dotted;
+  font-size: 120%;
+  color: #FFF6F6;
+  text-align: center;
+  width: 75%;
+}
+
+.lista1 ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.lista1 li {
+  margin: 10px;
+}
+
+/* KLUCZOWE 🔥 */
+.zdjecia1 {
+  font-size: 120%;
+  color: #FFF6F6;
+  text-align: center;
+  width: 75%;
+  margin-left: 20%;
+  margin-top: -60%;
+  flex-basis: 100%; /* WYMUSZA NOWĄ LINIĘ */
+}
+
+@media (max-width: 768px) {
+  .zdjecia1 img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .zdjecia1 img {
+    width: 80%;
+  }
+}
+
+footer {
+  background-color: #DB1A1A;
+  padding: 5%;
+  text-align: center;
+  margin-top: 5%;
+  width: 100%;
+  color: #FFF6F6;
 }

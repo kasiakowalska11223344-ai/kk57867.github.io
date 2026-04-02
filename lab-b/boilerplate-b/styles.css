@@ -1,0 +1,86 @@
+body {
+  background-color: #fff3fc;
+}
+
+.lista {
+  margin: auto;
+  display: flex;
+  width: 500px;
+  background-color: #fab9ea;
+  padding: 1%;
+  flex-direction: column;
+}
+
+#szukaj {
+  width: 400px ;
+  margin-bottom: 40px;
+}
+
+.zadanie {
+  width: 490px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  background-color: #fbffe6;
+}
+
+.a{
+  display: flex;
+  flex-direction: row;
+}
+
+.highlight {
+  color: #ff03c0;
+  font-weight: bold;
+}
+
+button{
+  background-color:#ebfaa1;
+}
+
+#zatwierdz{
+  background-color:rgb(27, 147, 21);
+}
+
+#zrobione{
+  margin-right: 10px;
+}
+
+.text{
+  margin-right: 10px;
+  width: 300px;
+}
+
+.data{
+  margin-right: 10px;
+  width: 100px;
+}
+
+#usun{
+  margin-right: 10px;
+  width: 40px;
+}
+
+.obrazek{
+  background-image: url("wildrose.png");
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#nowy{
+  width: 300px;
+}
+
+#n-data{
+  margin-left: 10px;
+}
+
+#zatwierdz{
+  margin-left: 5px;
+  width: 40px;
+}
+
