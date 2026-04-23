@@ -133,7 +133,7 @@ function checkWin() {
 
     if (ok) {
         gameFinished = true;
-        alert("🎉 Brawo! Ułożyłeś puzzle!");
+        alert("Brawo! Ułożyłeś puzzle!");
         showNotification();
     }
 }
