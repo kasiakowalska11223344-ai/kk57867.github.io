@@ -135,6 +135,7 @@ function checkWin() {
 
     if (ok) {
         gameFinished = true;
+        console.log("Wygrana!");  // Dodajemy log, aby zobaczyć, kiedy kod przechodzi do wygranej
 
         alert("🎉 Brawo! Ułożyłeś puzzle!"); // Alert po wygranej
         showNotification();                   // Powiadomienie systemowe
@@ -250,19 +251,10 @@ function showNotification() {
         return;
     }
 
+    // Sprawdzenie, czy użytkownik udzielił zgody na powiadomienia
     if (Notification.permission === "granted") {
-        new Notification("🎉 Brawo!", {
-            body: "Ułożyłeś wszystkie puzzle!",
-        });
-    } else if (Notification.permission === "default") {
-        Notification.requestPermission().then(permission => {
-            if (permission === "granted") {
-                new Notification("🎉 Brawo!", {
-                    body: "Ułożyłeś wszystkie puzzle!",
-                });
-            }
-        });
+        new Notification("🎉 Brawo! Ułożyłeś puzzle!");  // Wyświetlenie powiadomienia
     } else {
-        alert("Powiadomienia są zablokowane");
+        alert("Zgoda na powiadomienia nie została udzielona.");
     }
 }
