@@ -237,7 +237,7 @@ function showNotification() {
     }
 
     if (Notification.permission === "granted") {
-        new Notification("🎉 Brawo! Ułożyłeś puzzle!");
+        new Notification("Brawo! Ułożyłeś puzzle!");
     } else {
         alert("Zgoda na powiadomienia nie została udzielona.");
     }
