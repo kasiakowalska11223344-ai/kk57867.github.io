@@ -131,11 +131,13 @@ function checkWin() {
         }
     });
 
+    console.log("checkWin status:", ok);  // Debugowanie
+
     if (ok) {
         gameFinished = true;
 
-        alert("🎉 Brawo! Ułożyłeś puzzle!");
-        showNotification();
+        alert("🎉 Brawo! Ułożyłeś puzzle!"); // Alert po wygranej
+        showNotification();                   // Powiadomienie systemowe
     }
 }
 
