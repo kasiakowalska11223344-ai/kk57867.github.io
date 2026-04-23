@@ -131,14 +131,10 @@ function checkWin() {
         }
     });
 
-    console.log("checkWin status:", ok);  // Debugowanie
-
     if (ok) {
         gameFinished = true;
-        console.log("Wygrana!");  // Dodajemy log, aby zobaczyć, kiedy kod przechodzi do wygranej
-
-        alert("🎉 Brawo! Ułożyłeś puzzle!"); // Alert po wygranej
-        showNotification();                   // Powiadomienie systemowe
+        alert("🎉 Brawo! Ułożyłeś puzzle!");
+        showNotification();
     }
 }
 
@@ -170,7 +166,6 @@ function generatePuzzleFromCanvas(canvas) {
         index++;
     });
 
-    shuffle();
 }
 
 function generatePreview(canvas) {
@@ -207,15 +202,6 @@ function generatePreview(canvas) {
     });
 }
 
-function shuffle() {
-    const container = document.querySelector(".stol-left");
-    const pieces = Array.from(container.children);
-
-    pieces.sort(() => Math.random() - 0.5);
-
-    pieces.forEach(el => container.appendChild(el));
-}
-
 function resetGame() {
 
     gameFinished = false;
@@ -242,7 +228,6 @@ function resetGame() {
         el.style.backgroundSize = "";
     });
 
-    shuffle();
 }
 
 function showNotification() {
@@ -251,9 +236,8 @@ function showNotification() {
         return;
     }
 
-    // Sprawdzenie, czy użytkownik udzielił zgody na powiadomienia
     if (Notification.permission === "granted") {
-        new Notification("🎉 Brawo! Ułożyłeś puzzle!");  // Wyświetlenie powiadomienia
+        new Notification("🎉 Brawo! Ułożyłeś puzzle!");
     } else {
         alert("Zgoda na powiadomienia nie została udzielona.");
     }
