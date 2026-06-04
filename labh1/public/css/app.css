@@ -1,0 +1,44 @@
+body {
+    background-color: #ffcccc;
+}
+
+h1 {
+    color: #cc0000;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.table {
+    background-color: white;
+}
+
+.btn-success {
+    background-color: #ff6666;
+    border-color: #ff6666;
+}
+
+.btn-success:hover {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+}
+
+.btn-primary {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+.btn-primary:hover {
+    background-color: #990000;
+    border-color: #990000;
+}
+
+.btn-warning {
+    background-color: #ff9999;
+    border-color: #ff9999;
+}
+
+.btn {
+    border-radius: 15px;
+    font-weight: bold;
+}
