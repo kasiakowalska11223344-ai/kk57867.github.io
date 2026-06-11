@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="index">
+
+<h1>Pokemon list</h1>
+
+<a href="/create">Create Pokemon</a>
+
+<hr>
+
+{% for poke in pokemon %}
+
+<div>
+    <h3>{{ poke['name'] }}</h3>
+
+    <a href="/show/{{ poke['id'] }}">
+    Show
+    </a>
+
+    <a href="/edit/{{ poke['id'] }}">
+    Edit
+    </a>
+
+    <a href="/delete/{{ poke['id'] }}">
+    Delete
+    </a>
+
+    <p>Type: {{ poke['type'] }}</p>
+
+    <p>Level: {{ poke['level'] }}</p>
+</div>
+
+<hr>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="show">
+
+<h1>{{ pokemon['name'] }}</h1>
+
+<p>
+    Type: {{ pokemon['type'] }}
+</p>
+
+<p>
+    Level: {{ pokemon['level'] }}
+</p>
+
+<a href="/">
+    Back
+</a>
+
+    </div>
+
+{% endblock %}

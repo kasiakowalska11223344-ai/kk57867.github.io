@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="edit">
+
+<h1>Edit Pokemon</h1>
+
+<form method="post">
+
+    <label>Name:</label><br>
+    <input
+        type="text"
+        name="name"
+        value="{{ pokemon['name'] }}"
+    ><br><br>
+
+    <label>Type:</label><br>
+    <input
+        type="text"
+        name="type"
+        value="{{ pokemon['type'] }}"
+    ><br><br>
+
+    <label>Level:</label><br>
+    <input
+        type="number"
+        name="level"
+        value="{{ pokemon['level'] }}"
+    ><br><br>
+
+    <button type="submit">
+        Save Changes
+    </button>
+
+</form>
+
+    </div>
+
+{% endblock %}

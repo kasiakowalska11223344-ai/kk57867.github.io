@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Pokemon</title>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li>
+            <a href="{{ url_for('index') }}">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('index') }}">
+                Pokemon
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+
+{% block content %}
+{% endblock %}
+
+</main>
+
+<footer>
+    Custom Framework
+</footer>
+
+</body>
+</html>
