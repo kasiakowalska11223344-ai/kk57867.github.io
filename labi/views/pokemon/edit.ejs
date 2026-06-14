@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Pokemon</title>
+    <link rel="stylesheet" href="/stylesheets/style.min.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pokemon">Pokemon</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Edit Pokemon</h1>
+    <form method="post">
+        <p>
+            Name:
+            <input type="text" name="name" value="<%= pokemon.name %>">
+        </p>
+        <p>
+            Type:
+            <input type="text" name="type" value="<%= pokemon.type %>">
+        </p>
+        <p>
+            Level:
+            <input type="number" name="level" value="<%= pokemon.level %>">
+        </p>
+        <button type="submit">
+            Save changes
+        </button>
+    </form>
+    <p>
+        <a href="/pokemon">Back</a>
+    </p>
+</main>
+</body>
+</html>

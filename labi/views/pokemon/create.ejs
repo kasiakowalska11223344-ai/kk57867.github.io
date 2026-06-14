@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Pokemon</title>
+    <link rel="stylesheet" href="/stylesheets/style.min.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pokemon">Pokemon</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Create Pokemon</h1>
+    <form method="post" action="/pokemon/create">
+        <p>
+            Name:
+            <input type="text" name="name">
+        </p>
+        <p>
+            Type:
+            <input type="text" name="type">
+        </p>
+        <p>
+            Level:
+            <input type="number" name="level">
+        </p>
+        <button type="submit">Save</button>
+    </form>
+    <p>
+        <a href="/pokemon">Back</a>
+    </p>
+</main>
+</body>
+</html>

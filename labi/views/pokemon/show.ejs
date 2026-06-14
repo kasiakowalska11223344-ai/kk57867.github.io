@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= pokemon.name %></title>
+    <link rel="stylesheet" href="/stylesheets/style.min.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pokemon">Pokemon</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1><%= pokemon.name %></h1>
+    <p>
+        Type: <strong><%= pokemon.type %></strong>
+    </p>
+    <p>
+        Level: <strong><%= pokemon.level %></strong>
+    </p>
+    <p>
+        <a href="/pokemon">Back to list</a>
+    </p>
+</main>
+
+</body>
+</html>

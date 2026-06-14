@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon List</title>
+    <link rel="stylesheet" href="/stylesheets/style.min.css">
+</head>
+<body><body>
+
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pokemon">Pokemon</a></li>
+    </ul>
+</nav>
+
+<main class="index">
+
+    <h1>Pokemon List</h1>
+
+    <a href="/pokemon/create">Create new pokemon</a>
+
+
+    <div class="index-list">
+        <% pokemon.forEach(p => { %>
+            <div class="pokemon-item">
+                <br>
+                <h1><%= p.name %></h1>
+                <p>
+                    Type: <%= p.type %>
+                </p>
+                <p>
+                    Level: <%= p.level %>
+                </p>
+                <br>
+                <a href="/pokemon/<%= p.id %>">Details</a>
+                <a href="/pokemon/<%= p.id %>/edit">Edit</a>
+                <form
+                        action="/pokemon/<%= p.id %>/delete"
+                        method="post"
+                        style="display:inline;"
+                >
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        <% }) %>
+    </div>
+</main>
+
+</body></body>
+</html>
