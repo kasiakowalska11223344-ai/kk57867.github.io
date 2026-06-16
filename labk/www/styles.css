@@ -1,0 +1,87 @@
+/* Ogólny styl strony */
+main {
+  background-color: #CE97B0;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 33%;
+}
+
+/* Stylowanie komórek z prognozami */
+.b {
+  align-items: center;
+  border: white dotted 2px;
+  margin: 5px;
+}
+
+.ikona img {
+  width: 50px;
+  height: 50px;
+}
+
+.date, .temp, .description {
+  margin: 5px 0;
+}
+
+/* Styl dla całego ciała strony */
+body {
+  background-image: url(sky.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Nagłówek */
+header {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding-top: 20px;
+}
+
+/* Przyciski */
+button {
+  background-color: #F4A9A8;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Kolor i styl placeholdera */
+::placeholder {
+  color: #F4A9A8;
+  border: #F4A9A8;
+}
+
+/* Styl dla wyników pogody */
+#weather-result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #F4A9A8;
+  background-color: red;
+  margin-left: 5%;
+}
