@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(#fff6fb, #ffeaf6, #fff3fa);
+    color: #5d5677;
+    line-height: 1.8;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.hero{
+    background-image:url("images/clefairy-banner.jpg");
+    background-size:50% 100%;
+    background-repeat:no-repeat;
+    background-position:right center;
+
+    min-height:600px;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    background-color:#fff6fb;
+}
+
+.overlay{
+    width:50%;
+    background:none;
+    padding:0;
+}
+
+.hero-content{
+    max-width:500px;
+    padding:40px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #e35ba8;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 10px rgba(255,255,255,.9);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #4d4d68;
+}
+
+main {
+    padding: 80px 0;
+}
+
+.card {
+    background: #fffdfd;
+    padding: 35px;
+    margin-bottom: 40px;
+
+    border-radius: 35px;
+
+    border: 2px solid #ffd4ea;
+
+    box-shadow: 0 15px 35px rgba(245,170,215,.18);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(255,170,220,.30);
+}
+
+.card h2 {
+    position: relative;
+    display: inline-block;
+
+    color: #6aa7d8;
+
+    margin-bottom: 30px;
+}
+
+.card h2::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -10px;
+
+    width: 70px;
+    height: 5px;
+
+    background: #ff8fc7;
+
+    border-radius: 30px;
+}
+
+.card h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    color: #e67bb6;
+}
+
+.card p {
+    margin-bottom: 18px;
+}
+
+ul,
+ol {
+    margin: 20px 0 20px 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: "🌸 ";
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #fdff91;
+    color: #d7da3f;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 40px 40px 0 0;
+}
+
+a {
+    color: #e35ba8;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover {
+    color: #c64593;
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    background-size:100% 300px;
+    background-position:top center;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    padding-top:300px;
+
+}
+
+.overlay{
+    width:100%;
+}
+
+.hero-content{
+    max-width:90%;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero h1{
+
+    font-size:2.5rem;
+
+}
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+}
